@@ -22,6 +22,9 @@ h11==0.14.0
     # via uvicorn
 idna==3.10
     # via anyio
+jinja2==3.1.6
+markupsafe==3.0.2
+    # via jinja2
 pydantic==2.10.6
     # via fastapi
 pydantic-core==2.27.2

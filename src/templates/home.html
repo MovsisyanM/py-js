@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<h1>Welcome to the py-js Home Page! {{title}}</h1>
+<ul id="list">
+    {% for item in items %}
+    <li>{{ item }}</li>
+    {% endfor%}
+</ul>
+<button hx-post="/clicked" hx-select="#counter, #list" hx-swap="innerHTML">
+    Click Me
+</button>
+<p id="counter">{{ counter_i }}</p>
+{% endblock %}
